@@ -169,3 +169,5 @@ def team_names
     end
   end
 end
+
+puts team_names
