@@ -197,13 +197,16 @@ end
 
 def big_shoe_rebounds
   size = 0
+  name = ""
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
       team_data[:players].each do |ele|
         if ele[:shoe] > size
           size = ele[:shoe]
+          name = ele
         end
       end
     end
   end
+  return 
 end
