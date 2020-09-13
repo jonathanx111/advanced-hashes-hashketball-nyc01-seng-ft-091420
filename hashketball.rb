@@ -174,9 +174,9 @@ def player_numbers(team_name)
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
       team_data[:players].each do |ele|
-        if data == 
+        if data == team_name
           new << ele[:number]
-        binding.pry
+        end
       end
     end
   end
