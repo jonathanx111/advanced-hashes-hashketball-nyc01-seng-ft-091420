@@ -164,9 +164,9 @@ end
 
 def team_names
   game_hash.each do |location, team_data|
-    team_data.each do |attribute, data|
+   
       return team_data[:team_name]
-    end
+    
   end
 end
 
