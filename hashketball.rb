@@ -197,7 +197,7 @@ end
 
 def big_shoe_rebounds
   size = 0
-  name = ""
+  name = {}
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
       team_data[:players].each do |ele|
@@ -208,5 +208,5 @@ def big_shoe_rebounds
       end
     end
   end
-  return ele[:rebounds]
+  return name[:rebounds]
 end
